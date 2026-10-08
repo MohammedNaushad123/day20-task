@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container2{
+            height: 50vh;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* grid-template-rows: repeat(2,1fr); */
+            grid-template-rows: 300px 300px;
+            gap: 10px;
+            margin: 10px;
+
+        }
+        .s1{
+            background-color: tomato;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            
+        }
+        .s2{
+            background-color: orange;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .s3{
+            background-color: skyblue;
+        }
+        .s4{
+            background-color: skyblue;
+        }
+       .dot{
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+       }
+       .red{
+         background-color: red;
+         border-radius: 50%;
+         width: 30px;
+         height: 30px;
+       }
+       .yellow{
+        background-color: yellow;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+       }
+       .green{
+        background-color: green;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+       }
+       .searchbar{
+        background-color: #fff;
+        border-radius: 10px;
+        flex: 1;
+        width: 30px;
+        height: 30px;
+       }
+       .container3{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-rows: repeat(3,1fr); */
+        gap: 10px;
+        /* grid-template-rows: 300px 300px ; */
+        margin: 50px;
+       }
+       .box1{
+        background-color: tomato;
+        grid-column-start: 1;
+        grid-column-end: 4;
+       }
+       .box2{
+        background-color: skyblue;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+
+       }
+       .box3{
+        background-color: tomato;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+       }
+       .box4{
+        background-color: skyblue;
+        grid-column-start: -1;
+        grid-column-end: -4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+       }
+       .dot{
+        display: flex;
+        
+       }
+       .top{
+        background-color: red;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+       }
+       #bb{
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="dot">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="searchbar"></div>
+   </div>
+    <div class="container2">
+        <div class="s1" id="bb"></div>
+        <div class="s2" id="bb"></div>
+        <div class="s3"  id="bb"></div>
+        <div class="s4"  id="bb"></div>
+
+ 
+
+        
+        
+    </div>
+      
+</body>
+</html>

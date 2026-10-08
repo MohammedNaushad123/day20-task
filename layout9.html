@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-color: black;
+        }
+        .circle{
+            display: flex;
+            gap: 10px;
+            margin: 10px;
+        }
+        .red{
+            background-color: red;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        .yellow{
+            background-color: yellow;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        .green{
+            background-color: green;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        .container{
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+        }
+        .box1{
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .box2{
+            background-color: turquoise;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .box3{
+            background-color : olive;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .box4{
+            background-color: tomato;
+        }
+        .box5{
+            background-color: turquoise;
+        }
+        #box{
+            border-radius: 10px;
+        }
+        .search{
+            background-color: #fff;
+            border-radius: 10px;
+            width: 30px;
+            height: 30px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="search"></div>
+    </div>
+    <div class="container">
+        <div class="box1" id="box"></div>
+        <div class="box2" id="box"></div>
+        <div class="box3" id="box"></div>
+        <div class="box4" id="box"></div>
+        <div class="box5" id="box"></div>
+    </div>
+</body>
+</html>

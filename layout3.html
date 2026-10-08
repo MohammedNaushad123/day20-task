@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+           
+        }
+        .container3{
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-rows: repeat(3,1fr); */
+        gap: 10px;
+        /* grid-template-rows: 150px 150px 100px; */
+        margin: 10px;
+        /* background-color: black; */
+       }
+       .box1{
+        background-color: orange;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+       }
+       .box2{
+        background-color: skyblue;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+
+       }
+       .box3{
+        background-color: tomato;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+       }
+       .box4{
+        background-color: skyblue;
+        grid-column-start: -1;
+        grid-column-end: -4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+       }
+       .dot2{
+        margin: 10px;
+        display: flex;
+        gap: 10px;
+       }
+       .top{
+        background-color: red;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+       }
+       .bottom{
+        background-color: yellow;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+       }
+       .right{
+        background-color: green;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+       }
+       .search{
+        background-color: #fff;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        flex: 1;
+       }
+       #box{
+        border-radius: 10px;
+       }
+       
+    </style>
+</head>
+<body>
+
+    <div class="dot2">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="right"></div>
+            <div class="search"></div>
+        </div>
+     <div class="container3">
+        <div class="box1" id="box"></div>
+        <div class="box2" id="box"></div>
+        <div class="box3" id="box"></div>
+        <div class="box4" id="box"></div>
+      </div>
+        
+    
+</body>
+</html>
